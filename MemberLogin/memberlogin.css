@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Select Facility*/
+/*Member Login*/
 #welcome {
   position: absolute;
   text-align: center;
@@ -22,6 +22,70 @@ body {
   font-size: 1.5vw;
 }
 
+#user {
+  position: absolute;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  z-index: 1;
+  font-size: 3em;
+}
+
+#signin {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 15%;
+  padding-top: 1.3rem;
+  text-transform: uppercase;
+}
+
+form {
+    position: absolute;
+    display: block;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.8rem;
+}
+
+form input[type=text], select {
+    width: 16rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    overflow:hidden;
+    margin-left: 3rem;
+}
+
+form button:hover {
+    transition: 0.4s ease;
+    background-color: #595959;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#circle {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /*Top Navigation Bar*/
@@ -86,6 +150,11 @@ nav {
 
 /*Responsive Layout*/
 @media only screen and (max-width: 768px) {
+
+/*Select Membership*/
+#welcome {
+  display: none;
+}
 
 /*Navigation Bar*/
 nav {

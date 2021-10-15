@@ -14,3 +14,11 @@ navSlide();
 function studentLogin() {
     location.href = "StudentLogin/studentlogin.html";
 }
+
+function memberLogin() {
+    location.href = "MemberLogin/memberlogin.html";
+}
+
+function publicLogin() {
+    location.href = "SelectFacility/selectfacility.html";
+}
