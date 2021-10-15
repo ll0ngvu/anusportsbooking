@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/StudentLogin/studentlogin.css">
         <title>ANU Sports: Book A Facility</title>
         <link rel="shortcut icon" href="Images/anulogomini.png" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,7 +16,7 @@
 
     <body>
 
-          <!--Select Membership-->
+          <!--Student Login-->
           <div>
             <p id="welcome">Welcome to ANU Sports Booking Portal</p>
           </div>
@@ -24,18 +24,22 @@
           <div class="select-membership">
             <div id="circle">
               <i id="user" class="material-icons">account_circle</i>
-              <p id="select">Select Membership</p>
-              <div id="btn-group">
-                <button onclick="studentLogin()">ANU Student</button>
-                <button>ANU Sports Member</button>
-                <button>Public Member</button>
-              </div>
+              <p id="signin">Sign In</p>
+              <form action="/SelectFacility/selectfacility.html">
+                <label for="fname">Student ID</label>
+                <input type="text" id="stuid" name="studentid" placeholder="Student ID">
+            
+                <label for="lname">Password</label>
+                <input type="text" id="pass" name="password" placeholder="Password">
+              
+                <button>Log In</button>
+              </form>
             </div>
           </div>
 
         <!--Top Navigation Bar-->
         <nav class="nav-bar">
-          <div id="logo"><img src="Images/anulogo.png" alt="anulogo"></div>
+          <div id="logo"><img src="../Images/anulogo.png" alt="anulogo"></div>
           <div class="hamburger">
             <div class="line-1"></div>
             <div class="line-2"></div>
@@ -52,7 +56,7 @@
           </ul>
         </nav>
 
-          <script src="script.js"></script>
+          <script src="/script.js"></script>
 
         
     </body>

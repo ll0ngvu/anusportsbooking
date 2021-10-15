@@ -5,13 +5,14 @@
 }
 
 body {
+    font-family: sans-serif;
     height: 100vh;
     background-color: #D8E2E8;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Select Membership*/
+/*Student Login*/
 #welcome {
   position: absolute;
   text-align: center;
@@ -23,7 +24,7 @@ body {
 
 #user {
   position: absolute;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   text-align: center;
   width: 100%;
   font-size: 3rem;
@@ -31,14 +32,49 @@ body {
   font-size: 3em;
 }
 
-#select {
+#signin {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 20%;
+  top: 15%;
   padding-top: 1.3rem;
   text-transform: uppercase;
 }
+
+form {
+    position: absolute;
+    display: block;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0.8rem;
+}
+
+form input[type=text], select {
+    width: 16rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 10rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    overflow:hidden;
+    margin-left: 3rem;
+}
+
+form button:hover {
+    transition: 0.4s ease;
+    background-color: #595959;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 #circle {
   position: absolute;
@@ -49,31 +85,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-#btn-group {
-  position: absolute;
-  display: block;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-top: 0.8rem;
-}
-
-#btn-group button {
-  width: 14rem;
-  height: 2.5rem;
-  margin-top: 1rem;
-  border: none;
-  overflow:hidden;
-  transition-duration: 0.4s;
-}
-
-#btn-group button:hover {
-  transition: 0.4s ease;
-  background-color: #595959;
-  color: #fff;
-  cursor: pointer;
 }
 
 

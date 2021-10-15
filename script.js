@@ -9,3 +9,8 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+function studentLogin() {
+    location.href = "StudentLogin/studentlogin.html";
+}
