@@ -15,42 +15,15 @@ body {
 /*Select Facility*/
 #welcome {
   position: absolute;
-  text-align: center;
+  text-align: left;
+  margin-left: 3rem;
   top: 20%;
   width: 100%;
   text-transform: uppercase;
   font-size: 1.5vw;
 }
 
-.grid {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: repeat(3, 15rem);
-  grid-template-rows: repeat(3, 15rem);
-  grid-gap: 5px;
-  grid-gap: 1rem;
-}
 
-#cell {
-  /* center the cell content */
- justify-content: center;
- align-items: center;
- display: flex;
- font-family: Arial;
- font-size: 1.5rem;
- background-color: #fff;
- text-transform: uppercase;
-}
-
-#cell:hover {
-  cursor: pointer;
-  transition: 0.4s ease;
-  background-color: #595959;
-  color: #fff;
-}
 
 
 /*Top Navigation Bar*/
