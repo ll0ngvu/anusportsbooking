@@ -7,6 +7,7 @@
 body {
     font-family: sans-serif;
     height: 100vh;
+    background-color: #D8E2E8;
     overflow-x: hidden;
 }
 
@@ -19,15 +20,13 @@ nav #logo img {
 
 nav {
     position: absolute;
-    left: 0;
-    right: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 4.5rem;
+    padding: 1.5rem 1.5rem;
     background-color: #D8E2E8;
   }
-  
   
   .hamburger {
     cursor: pointer;
@@ -43,7 +42,7 @@ nav {
   }
   
   .hamburger div:nth-child(2) {
-    width: 25px;
+    width: 20px;
     margin-left: auto;
   }
   
@@ -59,7 +58,7 @@ nav {
     color: #000;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-size: 0.75rem;
   }
   
@@ -68,11 +67,13 @@ nav {
   }
   
   .nav-link:hover {
-    border-bottom: 1px solid #fff;
-    color: rgb(230, 230, 230);
+    color: #737373;
+    transition: 0.2s ease-in-out;
   }
-  
 
+  /*Select Membership*/
+
+  
   @media only screen and (max-width: 768px) {
     nav {
       padding: 1.5rem 1rem;
