@@ -11,6 +11,55 @@ body {
     overflow-x: hidden;
 }
 
+/*Select Membership*/
+#welcome {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  width: 100%;
+}
+
+#user {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+#select {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+}
+
+#circle {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn-group {
+  position: absolute;
+  display: block;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn-group button {
+  width: 14rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+}
+
 /*Top Navigation Bar*/
 nav #logo img {
     width: auto;
@@ -28,98 +77,97 @@ nav {
     background-color: #D8E2E8;
   }
   
-  .hamburger {
-    cursor: pointer;
-    display: none;
-  }
-  
-  .hamburger div {
-    height: 3px;
-    width: 25px;
-    background-color: #000;
-    margin: 5px;
-    transition: all 0.3s ease-in;
-  }
-  
-  .hamburger div:nth-child(2) {
-    width: 20px;
-    margin-left: auto;
-  }
-  
-  .nav-links {
-    display: flex;
-  }
-  
-  .nav-links li {
-    list-style: none;
-  }
-  
-  .nav-link {
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 0.75rem;
-  }
-  
-  .nav-links li:not(:last-child) {
-    margin-right: 2rem;
-  }
-  
-  .nav-link:hover {
-    color: #737373;
-    transition: 0.2s ease-in-out;
-  }
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
 
-  /*Select Membership*/
+.hamburger div {
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  margin: 5px;
+  transition: all 0.3s ease-in;
+}
 
-  
-  @media only screen and (max-width: 768px) {
-    nav {
-      padding: 1.5rem 1rem;
-    }
-    .hamburger {
-      display: block;
-    }
-    .hamburger.toggle .line-1 {
-      transform: rotate(45deg);
-      position: relative;
-      top: 8px;
-    }
-  
-    .hamburger.toggle .line-2 {
-      transform: translateX(20px);
-      opacity: 0;
-    }
-  
-    .hamburger.toggle .line-3 {
-      transform: rotate(-45deg);
-      position: relative;
-      top: -8px;
-    }
+.hamburger div:nth-child(2) {
+  width: 20px;
+  margin-left: auto;
+}
 
-    .nav-link {
-        color: #fff;
-    }
-    
-    .nav-links {
-      position: absolute;
-      height: calc(100vh - 6rem);
-      top: 6rem;
-      right: 0;
-      width: 100%;
-      transform: translateX(100%);
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      transition: transform 0.3s ease-in;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-  
-    .nav-links li:not(:last-child) {
-      margin-right: 0;
-    }
-    .nav-links.active {
-      transform: translateX(0);
-    }
-  }
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.75rem;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.nav-link:hover {
+  color: #737373;
+  transition: 0.2s ease-in-out;
+}
+
+/*Responsive Layout*/
+@media only screen and (max-width: 768px) {
+nav {
+  padding: 1.5rem 1rem;
+}
+.hamburger {
+  display: block;
+}
+.hamburger.toggle .line-1 {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.hamburger.toggle .line-2 {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.hamburger.toggle .line-3 {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-links {
+  position: absolute;
+  height: calc(100vh - 6rem);
+  top: 6rem;
+  right: 0;
+  width: 100%;
+  transform: translateX(100%);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 0.3s ease-in;
+  background-color: #404040;
+  z-index: 2;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 0;
+}
+.nav-links.active {
+  transform: translateX(0);
+}
+}
