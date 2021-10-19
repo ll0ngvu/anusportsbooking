@@ -25,15 +25,16 @@
             <div id="circle">
               <i id="user" class="material-icons">account_circle</i>
               <p id="signin">Sign In</p>
+
               
-              <form action="../SelectFacility/selectfacility.html">
+              <form onsubmit="toSelect()" action="../SelectFacility/selectfacility.html">
                 <label for="fname">Student ID</label>
                 <input type="text" id="stuid" name="studentid" placeholder="Student ID">
             
                 <label for="lname">Password</label>
                 <input type="text" id="pass" name="password" placeholder="Password">
               
-                <button onclick="toSelect()">Log In</button>
+                <input type="submit"></input>
               </form>
             </div>
           </div>

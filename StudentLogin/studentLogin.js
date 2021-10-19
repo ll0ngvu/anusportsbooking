@@ -1,3 +1,3 @@
 function toSelect() {
-    location.href = "../SelectFacility/selectfacility.html";
+    window.location.href = "../SelectFacility/selectfacility.html";
 }
