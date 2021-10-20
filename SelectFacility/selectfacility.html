@@ -16,52 +16,82 @@
 
     <body>
 
-          <!--Select Facility-->
-          <div>
-            <p id="welcome">Please Choose Facility</p>
-          </div>
-          
-          <div class="grid">
+        <!--Select Facility-->
+        <div>
+          <p id="welcome">Please Select Facility</p>
+        </div>
+        
+        <div class="grid">
 
-            <!--Ovals-->
-            <div class="cell" id="ovalcell"><p>Ovals</p>
-              <div class="menu">
-                  <a href="#">Willows Oval</a>
-                  <a href="#">Fellows Oval</a>
-                  <a href="#">North Oval</a>
-                  <a href="#">South Oval</a>
-              </div>
+          <!--Ovals-->
+          <div class="cell" id="ovalcell"><p>Ovals</p>
+            <div class="menu">
+                <a href="#">Willows Oval</a>
+                <a href="#">Fellows Oval</a>
+                <a href="#">North Oval</a>
+                <a href="#">South Oval</a>
             </div>
-
-            <!--Rooms-->
-            <div class="cell">Rooms</div>
-            <div class="cell">Indoor Halls</div>
-            <div class="cell" onclick="openBook()">Tennis Courts</div>
-            <div class="cell" onclick="openBook()">Cricket Nets</div>
-            <div class="cell">Climbing Walls</div>
           </div>
 
-        <!--Top Navigation Bar-->
-        <nav class="nav-bar">
-          <div id="logo"><a href="../index.html"><img src="../Images/anulogo.png" alt="anulogo"></a></div>
-          <div class="hamburger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
+          <!--Rooms-->
+          <div class="cell"><p>Rooms</p>
+            <div class="menu" id="room">
+              <a href="#">Blue Room</a>
+              <a href="#">Dojo</a>
+              <a href="#">Cycling Studio</a>
+              <a href="#">North Oval Pavilion</a>
+              <a href="#">South Oval Pavilion</a>
+              <a href="#">Studio 1</a>
+            </div>
           </div>
-          <ul class="nav-links">
-            <li><a href="#" class="nav-link">About US</a></li>
-            <li><a href="#" class="nav-link">Fitness Center</a></li>
-            <li><a href="#" class="nav-link">Get Active</a></li>
-            <li><a href="#" class="nav-link">Clubs</a></li>
-            <li><a href="#" class="nav-link">Contacts</a></li>
-            <li><a href="#" class="nav-link">Clubs Portal</a></li>
-            <li><a href="#" class="nav-link">Group Fitness Timetable</a></li>
-          </ul>
-        </nav>
 
-          <script src="/script.js"></script>
-          <script src="selectfacility.js"></script>
+          <!--Indoor Halls-->
+          <div class="cell"><p>Indoor Halls</p>
+            <div class="menu" id="indoor-halls">
+              <a href="#">Badminton Courts</a>
+              <a href="#">Basketball Courts</a>
+              <a href="#">Futsal Courts</a>
+              <a href="#">Netball Courts</a>
+              <a href="#">Martial Arts</a>
+              <a href="#">Squash Courts</a>
+              <a href="#">Table Tennis</a>
+              <a href="#">Volleyball Courts</a>
+            </div>
+          </div>
+
+          <div class="cell" onclick="openBook()">Tennis Courts</div>
+          <div class="cell" onclick="openBook()">Cricket Nets</div>
+
+          <!--Climbing Walls-->
+          <div class="cell"><p>Climbing Walls</p>
+            <div class="menu" id="climbing-walls">
+              <a href="#">New Climbing Wall</a>
+              <a href="#">Old Climbing Wall</a>
+          </div>
+          </div>
+        </div>
+
+      <!--Top Navigation Bar-->
+      <nav class="nav-bar">
+        <div id="logo"><a href="../index.html"><img src="../Images/anulogo.png" alt="anulogo"></a></div>
+        <div class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">About US</a></li>
+          <li><a href="#" class="nav-link">Fitness Center</a></li>
+          <li><a href="#" class="nav-link">Get Active</a></li>
+          <li><a href="#" class="nav-link">Clubs</a></li>
+          <li><a href="#" class="nav-link">Contacts</a></li>
+          <li><a href="#" class="nav-link">Clubs Portal</a></li>
+          <li><a href="#" class="nav-link">Group Fitness Timetable</a></li>
+        </ul>
+      </nav>
+
+        <script src="/script.js"></script>
+        <script src="selectfacility.js"></script>
         
     </body>
     
