@@ -1,5 +1,5 @@
 
 function openBook() {
-    location.href = "../BookingPage/booking.html";
+    window.location.href = "../BookingPage/booking.html";
 }
 
