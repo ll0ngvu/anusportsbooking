@@ -9,7 +9,7 @@ body {
     height: 100vh;
     background-color: #D8E2E8;
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /*Booking Page*/
@@ -37,6 +37,7 @@ body {
 #heading {
   position: relative;
   margin-top: 20vh;
+  font-size: 0.8em;
 }
 
 #title {
@@ -55,8 +56,9 @@ body {
   height: 40px;
   background-color: #E7E7E7;
   display: inline-flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding-left: 1%;
 }
 
 /*Top Navigation Bar*/
