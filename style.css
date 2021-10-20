@@ -46,8 +46,8 @@ body {
   width: 22rem;
   height: 22rem;
   border-radius: 50%;
-  background: #fff;
-  top: 50%;
+  background: #f2f2f2;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -68,12 +68,14 @@ body {
   border: none;
   overflow:hidden;
   transition-duration: 0.4s;
+  background-color: #333333;
+  color: #f2f2f2;
 }
 
 #btn-group button:hover {
   transition: 0.4s ease;
-  background-color: #595959;
-  color: #fff;
+  background-color: #d9d9d9;
+  color: #000;
   cursor: pointer;
 }
 
@@ -141,58 +143,63 @@ nav {
 /*Responsive Layout*/
 @media only screen and (max-width: 768px) {
 
-/*Select Membership*/
-#welcome {
-  display: none;
-}
+  /*Select Membership*/
+  #welcome {
+    display: none;
+  }
 
-/*Navigation Bar*/
-nav {
-  padding: 1.5rem 1rem;
-}
-.hamburger {
-  display: block;
-}
-.hamburger.toggle .line-1 {
-  transform: rotate(45deg);
-  position: relative;
-  top: 8px;
-}
+  /*Navigation Bar*/
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.toggle .line-1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
 
-.hamburger.toggle .line-2 {
-  transform: translateX(20px);
-  opacity: 0;
-}
+  .hamburger.toggle .line-2 {
+    transform: translateX(20px);
+    opacity: 0;
+  }
 
-.hamburger.toggle .line-3 {
-  transform: rotate(-45deg);
-  position: relative;
-  top: -8px;
-}
+  .hamburger.toggle .line-3 {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
 
-.nav-link {
-    color: #fff;
-}
+  .nav-link {
+      color: #fff;
+  }
 
-.nav-links {
-  position: absolute;
-  height: calc(100vh - 6rem);
-  top: 6rem;
-  right: 0;
-  width: 100%;
-  transform: translateX(100%);
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transition: transform 0.3s ease-in;
-  background-color: #404040;
-  z-index: 2;
-}
+  .nav-links {
+    position: absolute;
+    height: calc(100vh - 6rem);
+    top: 6rem;
+    right: 0;
+    width: 100%;
+    transform: translateX(100%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.3s ease-in;
+    background-color: #404040;
+    z-index: 2;
+  }
 
-.nav-links li:not(:last-child) {
-  margin-right: 0;
-}
-.nav-links.active {
-  transform: translateX(0);
-}
+  .nav-links li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  #circle {
+    top: 50%;
+  }
 }
