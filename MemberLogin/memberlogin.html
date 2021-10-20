@@ -25,21 +25,23 @@
             <div id="circle">
               <i id="user" class="material-icons">account_circle</i>
               <p id="signin">Sign In</p>
-              <form action="/SelectFacility/selectfacility.html">
+
+              <!--Login Form-->
+              <form onsubmit="toSel()" action="../SelectFacility/selectfacility.html">
                 <label for="fname">Membership Number</label>
                 <input type="text" id="stuid" name="studentid" placeholder="Membership No.">
             
                 <label for="lname">Password</label>
                 <input type="text" id="pass" name="password" placeholder="Password">
               
-                <button>Log In</button>
+                <input id="sub" type="submit" value="Log In"></input>
               </form>
             </div>
           </div>
 
         <!--Top Navigation Bar-->
         <nav class="nav-bar">
-          <div id="logo"><img src="../Images/anulogo.png" alt="anulogo"></div>
+          <div id="logo"><a href="../index.html"><img src="../Images/anulogo.png" alt="anulogo"></a></div>
           <div class="hamburger">
             <div class="line-1"></div>
             <div class="line-2"></div>
@@ -57,7 +59,7 @@
         </nav>
 
           <script src="/script.js"></script>
-
+          <script src="../MemberLogin/memberLogin.js"></script>
         
     </body>
     
