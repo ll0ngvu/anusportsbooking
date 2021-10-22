@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 body {
     font-family: sans-serif;
     background-color: #fff;
     overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
     display: flex;
 }
 
@@ -17,6 +18,7 @@ body {
 /* Booking Form */
 
 #make-a {
+  font-size: 1.5em;
   padding-bottom: 7%;
 }
 
@@ -81,6 +83,18 @@ label {
   font-size: 0.9em;
 }
 
+.bookinfo {
+  width: 110%;
+}
+
+#attendees {
+  padding-right: 1em;
+  margin-left: -1em;
+}
+
+#courtsquant {
+  margin-left: -1em;
+}
 
 
 .icon-container {
@@ -93,7 +107,7 @@ label {
   background-color: #404040;
   color: white;
   padding: 10px;
-  margin: 15px 0;
+  margin: 11px 0;
   border: none;
   width: 100%;
   border-radius: 3px;
@@ -152,11 +166,11 @@ span.price {
 }
 
 .heading3 {
-  margin-top: 10%;
+  margin-top: 11.3%;
 }
 
 .heading4 {
-  margin-top: 3.5%;
+  margin-top: 3.8%;
 }
 
 #note {
@@ -235,7 +249,7 @@ span.price {
 }
 
 .seat {
-  background-color: #D8E2E8;
+  background-color: #bfcfd9;
   height: 40px;
   width: 70px;
   margin: 3px;
@@ -243,15 +257,15 @@ span.price {
   font-size: 0.8em;
   text-align: center;
   align-items: center;
-  padding-top: 2%;
+  padding-top: 2.5%;
 }
 
 .selected {
-  background-color: #D5E8C3;
+  background-color: #bedca3;
 }
 
 .occupied {
-  background-color: #F29898;
+  background-color: #ee7777;
 }
 
 .seat:not(.occupied):hover {

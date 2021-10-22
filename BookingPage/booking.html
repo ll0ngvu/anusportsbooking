@@ -23,7 +23,7 @@
           <div class="col-75">
             <div class="container">
             
-              <form>
+              <form action="../ConfirmationPage/confirm.html">
               
                 <div class="row">
                   <div class="col-50">
@@ -97,15 +97,21 @@
 
                     <div class="row">
                       <div class="col-50">
-                        <label for="expyear">Number of Attendees</label>
-                        <input type="text" id="expyear" name="expyear">
+                        <div class="bookinfo" id="attendees">
+                          <label for="expyear">Number of Attendees</label>
+                          <input type="text" id="expyear" name="expyear">
+                        </div>
+                        
                       </div>
                       <div class="col-50">
-                        <label for="cvv">Number of Courts/Fields</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="Refer to info page">
+                        <div class="bookinfo" id="courtsquant">
+                          <label for="cvv">Number of Courts/Fields</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="Refer to info page">
+                        </div>
                       </div>
                     </div>
 
+              
                     <div id="heading" class="heading4">
                       <div id="title">4</div>
                       <div id="subtitle">Select Timeslot</div>
@@ -176,8 +182,8 @@
                       <div class="seat">11:00am</div>
                     </div>
                     <div class="rowcal">
-                      <div class="seat">12:00pm</div>
-                      <div class="seat">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
                       <div class="seat">12:00pm</div>
                       <div class="seat">12:00pm</div>
                       <div class="seat">12:00pm</div>
@@ -203,7 +209,7 @@
                       <div class="seat">2:00pm</div>
                     </div>
                     <div class="rowcal">
-                      <div class="seat">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
                       <div class="seat">3:00pm</div>
                       <div class="seat">3:00pm</div>
                       <div class="seat occupied">3:00pm</div>
@@ -223,7 +229,6 @@
                   <li>All visitors must check in via the CBR check-in QR code. </li>
                   <li>All patrons must abide by social distancing of 1.5 metres where possible.</li>
                   <li>All ANU Sport facilities must be booked prior to use, no walk-in bookings will be permitted.</li>
-                  <li>Please ensure you have read our Terms and Conditions</li>
                 </ul>
 
               
@@ -233,8 +238,9 @@
 
               <label id="declare">
                 <p>Declaration:</p>
-                <input type="checkbox" name="sameadr" /> I agree to the Terms and Conditions of booking a facility with ANU Sport. <br>
-                <input type="checkbox" name="sameadr" /> By requesting a booking you agree to abide by ANU Sport’s COVID protocols.
+                <input type="checkbox" name="sameadr" required /> I agree to the Terms and Conditions of booking a facility with ANU Sport. <br>
+                <input type="checkbox" name="sameadr" required /> By requesting a booking you agree to abide by ANU Sport’s COVID protocols. <br>
+                <input type="checkbox" name="sameadr" required /> Please ensure all fields are filled before preceding.
               </label>
 
               <div class="row">
