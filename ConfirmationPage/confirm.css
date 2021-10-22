@@ -10,7 +10,6 @@ body {
     height: 100vh;
     background-color: #D8E2E8;
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Booking Confirmation*/
@@ -45,6 +44,8 @@ body {
 
 #your {
     margin-bottom: 1em;
+    font-size: 1.3em;
+    text-decoration: underline;
 }
 
 #deets {
