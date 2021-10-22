@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -12,81 +13,49 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Student Login*/
+/*Booking Confirmation*/
 #welcome {
   position: absolute;
-  text-align: center;
-  top: 20%;
+  margin-left: 12.5%;
+  top: 17%;
   width: 100%;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
-#user {
-  position: absolute;
-  margin-top: 1rem;
-  text-align: center;
-  width: 100%;
-  font-size: 3rem;
-  z-index: 1;
-  font-size: 3em;
-}
-
-#signin {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 15%;
-  padding-top: 1.3rem;
-  text-transform: uppercase;
-}
-
-form {
+#check-icon {
     position: absolute;
-    display: block;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 0.8rem;
+    top: 17%;
+    margin-left: 10%;
+    font-size: 30px;
+    color:#009900;
 }
 
-form input[type=text], select {
-    width: 16rem;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+#confirm-sub {
+    position: absolute;
+    top: 25%;
+    margin-left: 12.5%;
 }
 
-form #sub2 {
-    width: 10rem;
-    height: 2.5rem;
-    margin-top: 1rem;
-    border: none;
-    overflow:hidden;
-    margin-left: 3rem;
-    background-color: #333333;
-    color: #fff;
+#booking-details {
+    position: absolute;
+    top: 32%;
+    left: 12.5%;
 }
 
-form #sub2:hover {
-    transition: 0.4s ease;
-    background-color: #d9d9d9;
-    color: #000;
-    cursor: pointer;
+#your {
+    margin-bottom: 1em;
 }
 
+#deets {
+    list-style-type: none;
+    line-height: 2em;
+}
 
-#circle {
-  position: absolute;
-  width: 22rem;
-  height: 22rem;
-  border-radius: 50%;
-  background: #f2f2f2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#map {
+    position: absolute;
+    top: 80%;
+    width: 130%;
 }
 
 
