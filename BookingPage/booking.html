@@ -18,32 +18,252 @@
 
         <!--Booking Page-->
 
+        <!-- Booking Form -->
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+            
+              <form>
+              
+                <div class="row">
+                  <div class="col-50">
+                    <p id="make-a">Make A Booking</p>
 
-        <form id="booking-form">
-          <div id="form-container">
-            <div><p id="welcome">Make A Booking</p></div>
-  
-            <div id="heading">
-              <div id="title">1</div>
-              <div id="subtitle">General Information</div>
-            </div>
-  
-            <div id="heading">
-              <div id="title">2</div>
-              <div id="subtitle">Emergency Contact</div>
-            </div>
-  
-            <div id="heading">
-              <div id="title">1</div>
-              <div id="subtitle">Booking Information</div>
-            </div>
-  
-            <div id="heading">
-              <div id="title">1</div>
-              <div id="subtitle">Available Timeslots</div>
+                    <div id="heading">
+                      <div id="title">1</div>
+                      <div id="subtitle">General Information</div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-50">
+
+                        <div class="flname" id="fl-first">
+                          <label for="state">First Name</label>
+                          <input type="text" id="state" name="state">
+                        </div>
+                      </div>
+
+                      <div class="col-50">
+                        <div class="flname" id="fl-last">
+                          <label for="zip">Last Name</label>
+                          <input type="text" id="zip" name="zip">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="adr">Mobile Number</label>
+                    <input type="text" id="adr" name="address">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+
+
+                    <div id="heading" class="heading2">
+                      <div id="title">2</div>
+                      <div id="subtitle">Emergency Contact</div>
+                    </div>
+        
+                    <label for="email">Contact Name</label>
+                    <input type="text" id="email" name="email">
+                    <label for="adr">Relationship</label>
+                    <input type="text" id="adr" name="address">
+                    <label for="city">Mobile Number</label>
+                    <input type="text" id="city" name="city">
+
+
+                    <div id="heading" class="heading2">
+                      <div id="title">5</div>
+                      <div id="subtitle">Timeslots Ranked By Preference</div>
+                    </div>
+
+
+                    <label for="email">Timeslot 1</label>
+                    <input type="text" id="email" name="email" value="9/10/2021 12:00pm - 1:00pm" disabled>
+                    <label for="adr">Timeslot 2</label>
+                    <input type="text" id="adr" name="address" value="9/10/2021 1:00pm - 2:00pm" disabled>
+                    <label for="city">Timeslot 3</label>
+                    <input type="text" id="city" name="city" value="9/10/2021 12:00pm - 2:00pm" disabled>
+
+                  </div>
+        
+                  <div class="col-50">
+
+                    <div id="heading" class="heading3">
+                      <div id="title">3</div>
+                      <div id="subtitle">Booking Information</div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Number of Attendees</label>
+                        <input type="text" id="expyear" name="expyear">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">Number of Courts/Fields</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Refer to info page">
+                      </div>
+                    </div>
+
+                    <div id="heading" class="heading4">
+                      <div id="title">4</div>
+                      <div id="subtitle">Select Timeslot</div>
+                    </div>
+
+                    
+
+                    <!-- Calendar -->
+              <div class="movie-container">
+                <ul class="showcase">
+                  <li>
+                    <div class="seat"></div>
+                    <small>Available</small>
+                  </li>
+                  <li>
+                    <div class="seat selected"></div>
+                    <small>Selected Time</small>
+                  </li>
+                  <li>
+                    <div class="seat occupied"></div>
+                    <small>Unavailable</small>
+                  </li>    
+                </ul>
+                
+                <div class="cal-container">
+    
+                  <div>
+                      <div class="month">October</div>
+                  </div>
+    
+                  <div class="rowcal">
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                  </div>
+    
+                  <div class="rowcal">
+                    <div class="date">4/10</div>
+                    <div class="date">5/10</div>
+                    <div class="date">6/10</div>
+                    <div class="date">7/10</div>
+                    <div class="date">8/10</div>
+                    <div class="date">9/10</div>
+                    <div class="date">10/10</div>
+                  </div>
+    
+    
+                  <div class="rowcal">
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat occupied">11:00am</div>
+                      <div class="seat occupied">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat occupied">2:00pm</div>
+                      <div class="seat occupied">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                    </div>
+                </div>
+              </div>
+
+              
+
+
+              <div id="note">
+                <p>Note:</p>
+                <ul>
+                  <li>All visitors must check in via the CBR check-in QR code. </li>
+                  <li>All patrons must abide by social distancing of 1.5 metres where possible.</li>
+                  <li>All ANU Sport facilities must be booked prior to use, no walk-in bookings will be permitted.</li>
+                  <li>Please ensure you have read our Terms and Conditions</li>
+                </ul>
+
+              
+              </div>
+
+              
+
+              <label id="declare">
+                <p>Declaration:</p>
+                <input type="checkbox" name="sameadr" /> I agree to the Terms and Conditions of booking a facility with ANU Sport. <br>
+                <input type="checkbox" name="sameadr" /> By requesting a booking you agree to abide by ANU Sport’s COVID protocols.
+              </label>
+
+              <div class="row">
+                <div class="col-50">
+                  <input type="submit" value="Confirm" class="btn">
+                </div>
+                <div class="col-50">
+                  <input type="submit" value="Cancel" class="btn">
+                </div>
+              </div>
+
+                  </div>
+
+                  
+
+              </div>
+
+              
+              
+                
+                
+                
+              </form>
             </div>
           </div>
-        </form>
+
+        </div>
+
+       
 
         
 
@@ -67,7 +287,8 @@
           </ul>
         </nav>
 
-          <script src="/script.js"></script>        
+          <script src="/script.js"></script>     
+          <script src="booking.js"></script>   
     </body>
     
 </html>
